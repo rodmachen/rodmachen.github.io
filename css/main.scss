@@ -1,0 +1,181 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-family: Baskerville,"Baskerville Old Face","Hoefler Text",Garamond,"Times New Roman",serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.25;
+
+$spacing-unit:     30px;
+
+// $text-color:       #111;
+$background-color: #efefef;
+$brand-color:      #003000;
+$text-color:       $brand-color;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    960px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
+
+
+.header-name, .footer-name, .post-meta, .post-link, .post-header {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: bold;
+}
+
+.site-header {
+	background-color: $brand-color;
+	color: $background-color;
+	height: 86px;
+		color: $background-color;
+
+}
+
+.logo {
+	font-weight: normal;
+	font-size: 5em;
+	float: left;
+	line-height: 1em;
+	padding-right: .5em;
+	margin-bottom: 0;
+	color: $background-color;
+	  &:hover {
+      color: white;
+    }
+}
+
+.header-name {
+	float: left;
+	line-height: 2.75em;
+	font-weight: bold;
+	font-size: 1.75em;
+	margin-bottom: 0;
+	color: $background-color;
+    &:hover {
+      color: white;
+    }
+}
+
+.header-nav {
+	font-weight: normal;
+	// display: inline-block;
+	float: right;
+	font-size: 1.5em;
+	padding: .95em .75em 0 0;
+	color: $background-color;
+    &:hover {
+      color: white;
+    }
+}
+
+.nav-right {
+	float: right;
+	width: 400px;
+}
+
+.home, .post {
+	padding: 0em 0.5em;
+}
+.division {
+	margin-bottom: 2em;
+}
+.page-heading {
+	font-size: 6em;
+	font-weight: normal;
+	text-align: center;
+	font-family: Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+	// font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.post-link {
+	font-size: 2em;
+	margin-bottom: .25em;
+	text-align: center;
+}
+.post-header {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.page-content {
+	min-height: calc(100vh - 242px);
+	// width: 70%;
+	float: left;
+	margin: 0;
+	h2 {
+		font-weight: normal;
+	}
+}
+.post-meta {
+	p {
+	font-size: 1em;
+}
+}
+.sidebar {
+	margin: 2em 0;
+	width: 30%;
+	float: left;
+	text-align: center;
+h1 {
+	font-weight: normal;
+}
+}
+
+.footer-name {
+	font-weight: normal;
+	float: left;
+	line-height: 4em;
+	font-size: 1.25em;
+	margin-bottom: 0;
+	color: $background-color;
+    &:hover {
+      color: white;
+    }
+}
+
+.footer-nav {
+	font-weight: normal;
+	// display: inline-block;
+	float: right;
+	font-size: 1.25em;
+	padding: 1.25em .75em 0 0;
+	color: $background-color;
+    &:hover {
+      color: white;
+    }
+}
+
+.post {
+	p {
+		font-size: 1.5em;
+	}
+}
