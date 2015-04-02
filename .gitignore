@@ -39,3 +39,4 @@ Thumbs.db
 /vendor/*
 /dist
 /.tmp
+/_site
