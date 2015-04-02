@@ -9,14 +9,16 @@ layout: default
   <!-- <hr class="division"> -->
   <ul class="post-list">
     {% for post in paginator.posts %}
-      <li>
+      <li onclick="location.href='{{ post.url | prepend: site.baseurl }}'">
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link" >{{ post.title }}</a>
         </h2>
           {{ post.excerpt }}
       </li>
     {% endfor %}
   </ul>
+
+  <!-- href="{{ post.url | prepend: site.baseurl }}" -->
   
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
