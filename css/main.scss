@@ -12,7 +12,7 @@ $base-line-height: 1.25;
 
 $text-color:       #111;
 $background-color: #f6f6f6;
-$brand-color:      #004000;
+$brand-color:      #400000;
 // $text-color:       $brand-color;
 
 @import
@@ -20,6 +20,7 @@ $brand-color:      #004000;
 ;
 
 body {
+	height: 100%;
 	color: $text-color;
 	background-color: #dddddd;
 	font-family: $base-font-family;
@@ -159,7 +160,9 @@ ul.post-list {
 }
 
 .page-content {
-	min-height: calc(100vh - 272px);
+	height: 100%;
+	// min-height: calc(100% - 72px);
+	min-width: 100%;
 	// width: 70%;
 	float: left;
 	margin: 0;

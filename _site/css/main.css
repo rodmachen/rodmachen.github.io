@@ -138,6 +138,7 @@
     color: #099; }
 
 body {
+  height: 100%;
   color: #111;
   background-color: #dddddd;
   font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
@@ -159,7 +160,7 @@ body {
 
 .site-header {
   box-shadow: 0px 0px 10px #777;
-  background-color: #004000;
+  background-color: #400000;
   color: #f6f6f6;
   height: 92px;
   color: #f6f6f6;
@@ -248,7 +249,8 @@ ul.post-list {
   text-align: center; }
 
 .page-content {
-  min-height: calc(100vh - 272px);
+  height: 100%;
+  min-width: 100%;
   float: left;
   margin: 0; }
   .page-content h2 {
