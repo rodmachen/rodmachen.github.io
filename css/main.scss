@@ -8,29 +8,17 @@ $base-font-family: Baskerville,"Baskerville Old Face","Hoefler Text",Garamond,"T
 $base-font-size:   16px;
 $base-line-height: 1.25;
 
-$spacing-unit:     30px;
+// $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #f6f6f6;
 $brand-color:      #004000;
 // $text-color:       $brand-color;
 
-// $grey-color:       #828282;
-// $grey-color-light: lighten($grey-color, 40%);
-// $grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-// $content-width:    800px;
-
-// $on-palm:          600px;
-// $on-laptop:        800px;
-
 @import
         "syntax-highlighting"
 ;
 
-html {
-}
 body {
 	color: $text-color;
 	background-color: #dddddd;
@@ -68,7 +56,6 @@ body {
 	font-weight: normal;
 	font-size: 5em;
 	float: left;
-	// line-height: 1em;
 	padding: 0 .5em 0 .25em;
 	margin: 0;
 	color: $background-color;
@@ -115,22 +102,19 @@ body {
 }
 .page-heading {
 	font-size: 6em;
-	// font-weight: normal;
 	text-align: center;
-	// text-shadow: 1px 1px 1px #777;
-	// font-family: Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	margin: 0 0 .25em 0;
 	padding: .25em 0 0 0;
-	// border-bottom: 1px solid $brand-color;
-	// font-family: monaco,Consolas,"Lucida Console",monospace;
 }
+
 .post-link {
 	font-size: 2em;
 	display: block;
 	text-align: center;
 	margin: 0;
 }
+
 .post-list {
 	p {
 		font-size: 1.5em;
@@ -145,6 +129,7 @@ body {
 		margin: 0;
 	}
 }
+
 .post-list li, .post {
 	background-color: #f9f9f9;
 	box-shadow: 0px 2px 8px #777;
@@ -164,6 +149,7 @@ ul.post-list {
 		margin: 0;
 	}
 }
+
 .post-header {
 	font-size: 1.5em;
 	text-align: center;
@@ -179,12 +165,14 @@ ul.post-list {
 		padding: .01em 0;
 	}
 }
+
 .post-meta {
 	p {
 		// font-size: 1em;
 	}
 	text-align: right;
 }
+
 .sidebar {
 	margin: 2em 0;
 	width: 30%;
@@ -241,7 +229,6 @@ code {
 pre {
     padding: 8px 12px;
     // overflow-x: scroll;
-
     > code {
         border: 0;
         padding-right: 0;
