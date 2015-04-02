@@ -6,49 +6,52 @@
 // Our variables
 $base-font-family: Baskerville,"Baskerville Old Face","Hoefler Text",Garamond,"Times New Roman",serif;
 $base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.25;
 
 $spacing-unit:     30px;
 
-// $text-color:       #111;
-$background-color: #efefef;
-$brand-color:      #003000;
-$text-color:       $brand-color;
+$text-color:       #111;
+$background-color: #f6f6f6;
+$brand-color:      #004000;
+// $text-color:       $brand-color;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+// $grey-color:       #828282;
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    960px;
+// $content-width:    800px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+// $on-palm:          600px;
+// $on-laptop:        800px;
 
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-// Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
         "syntax-highlighting"
 ;
 
+html {
+}
+body {
+	color: $text-color;
+	background-color: #dddddd;
+	font-family: $base-font-family;
+	margin: 0;
+	a {
+		text-decoration: none;
+		color: inherit
+	}
+	ul {
+		list-style-type: none;
+	}
+}
 
-.header-name, .footer-name, .post-meta, .post-link, .post-header {
+.wrapper {
+	max-width: 960px;
+	clear: both;
+	margin: 0 auto;
+}
+
+.header-name, .footer-name, .post-meta, .post-link, .post-header,  {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: bold;
 }
@@ -56,18 +59,18 @@ $on-laptop:        800px;
 .site-header {
 	background-color: $brand-color;
 	color: $background-color;
-	height: 86px;
-		color: $background-color;
-
+	height: 92px;
+	color: $background-color;
+	clear: both;
 }
 
 .logo {
 	font-weight: normal;
 	font-size: 5em;
 	float: left;
-	line-height: 1em;
-	padding-right: .5em;
-	margin-bottom: 0;
+	// line-height: 1em;
+	padding: 0 .5em 0 .25em;
+	margin: 0;
 	color: $background-color;
 	  &:hover {
       color: white;
@@ -76,7 +79,7 @@ $on-laptop:        800px;
 
 .header-name {
 	float: left;
-	line-height: 2.75em;
+	line-height: 1.75em;
 	font-weight: bold;
 	font-size: 1.75em;
 	margin-bottom: 0;
@@ -91,7 +94,7 @@ $on-laptop:        800px;
 	// display: inline-block;
 	float: right;
 	font-size: 1.5em;
-	padding: .95em .75em 0 0;
+	padding: .6em .75em 0 0;
 	color: $background-color;
     &:hover {
       color: white;
@@ -101,25 +104,65 @@ $on-laptop:        800px;
 .nav-right {
 	float: right;
 	width: 400px;
+	padding-right: .75em;
 }
 
 .home, .post {
 	padding: 0em 0.5em;
 }
 .division {
-	margin-bottom: 2em;
+	margin: 0.5em 2em 2em 2em;
 }
 .page-heading {
 	font-size: 6em;
-	font-weight: normal;
+	// font-weight: normal;
 	text-align: center;
-	font-family: Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-	// font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	// text-shadow: 1px 1px 1px #777;
+	// font-family: Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin: 0 0 .25em 0;
+	padding: .25em 0 0 0;
+	// border-bottom: 1px solid $brand-color;
+	// font-family: monaco,Consolas,"Lucida Console",monospace;
 }
 .post-link {
 	font-size: 2em;
-	margin-bottom: .25em;
+	display: block;
 	text-align: center;
+	margin: 0;
+}
+.post-list {
+	p {
+		font-size: 1.5em;
+		margin-bottom: 0;
+	}
+	li {
+	padding: 1em 2em 2em 2em;
+	margin: 2em;
+	// margin: 2em .5em;
+	}
+	ul {
+		margin: 0;
+	}
+}
+.post-list li, .post {
+	background-color: #f9f9f9;
+	box-shadow: 0px 2px 8px #777;
+	// box-shadow: 6px 8px 6px -6px #777;
+}
+
+ul.post-list {
+	margin: 0;
+	padding: 0;
+}
+
+.post {
+	padding: 2em;
+	margin: 2em;
+	// margin: 2em .5em;
+	h1 {
+		margin: 0;
+	}
 }
 .post-header {
 	font-size: 1.5em;
@@ -127,18 +170,20 @@ $on-laptop:        800px;
 }
 
 .page-content {
-	min-height: calc(100vh - 242px);
+	min-height: calc(100vh - 272px);
 	// width: 70%;
 	float: left;
 	margin: 0;
 	h2 {
 		font-weight: normal;
+		padding: .01em 0;
 	}
 }
 .post-meta {
 	p {
-	font-size: 1em;
-}
+		// font-size: 1em;
+	}
+	text-align: right;
 }
 .sidebar {
 	margin: 2em 0;
@@ -153,7 +198,7 @@ h1 {
 .footer-name {
 	font-weight: normal;
 	float: left;
-	line-height: 4em;
+	line-height: 3em;
 	font-size: 1.25em;
 	margin-bottom: 0;
 	color: $background-color;
@@ -167,7 +212,7 @@ h1 {
 	// display: inline-block;
 	float: right;
 	font-size: 1.25em;
-	padding: 1.25em .75em 0 0;
+	padding: 1em .75em 0 0;
 	color: $background-color;
     &:hover {
       color: white;
@@ -178,4 +223,38 @@ h1 {
 	p {
 		font-size: 1.5em;
 	}
+}
+
+pre,
+code {
+    font-size: 18px;
+    border: 1px solid #999999;
+    // border-radius: 3px;
+    background-color: #efefef;
+    line-height: 22px;
+}
+
+code {
+    padding: 2px 4px;
+}
+
+pre {
+    padding: 8px 12px;
+    // overflow-x: scroll;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.pagination {
+	font-size: 1.5em;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.previous, .next {
+	font-weight: bold;
 }

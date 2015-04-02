@@ -2,9 +2,7 @@
 title: Rod Machen
 email: mail@rodmachen.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Rod Machen's writings on tech and code.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://rodmachen.github.io" # the base hostname & protocol for your site
 twitter_username: rod_machen
@@ -12,8 +10,8 @@ github_username:  rodmachen
 
 # Build settings
 markdown: kramdown
-twitter:
-  consumer_key: 6H7jpH0roACOt7EOMwiUIOwWF
-  consumer_secret: eBdQhlnI1ZMWZwtG2vehHUDr37nE1ECJquxVdhJUMGEfWaYrci
-  access_token: 2536204056-yNSHlK2cAnXbmLzPDWG5USuZkWDVAqr3bYSGr0V
-  access_token_secret: GGGoHgQR5hSLkEzaTr7FDlexoUJOCruBFYhPoH1mdRnYI
+
+# permalink: /:title
+
+paginate: 5
+paginate_path: 'page:num'
