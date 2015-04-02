@@ -4,8 +4,9 @@ title: Contact
 permalink: /contact/
 ---
 <style>
-	body {
-		text-align: center
+	.post	p {
+		text-align: center;
+		font-size: 1.75em;
 	}
 </style>
 

@@ -100,7 +100,7 @@ body {
 	padding: 0em 0.5em;
 }
 .division {
-	margin: 0.5em 2em 2em 2em;
+	margin: 1em 0;
 }
 .page-heading {
 	font-size: 6em;
@@ -246,8 +246,6 @@ pre {
 	font-size: 1.5em;
 	text-align: center;
 	margin-bottom: 1em;
-}
-
-.previous, .next {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: bold;
 }
