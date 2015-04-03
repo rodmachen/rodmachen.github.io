@@ -18,7 +18,9 @@ $brand-color:      #400000;
 @import
         "syntax-highlighting"
 ;
-
+html {
+	height: 100%;
+}
 body {
 	height: 100%;
 	color: $text-color;
@@ -53,6 +55,7 @@ body {
 	height: 92px;
 	color: $background-color;
 	clear: both;
+	text-align: center;
 }
 
 .logo {
@@ -100,10 +103,6 @@ body {
 	float: right;
 	width: 400px;
 	padding-right: .75em;
-	@media (max-width: 720px) {
-		// visibility: hidden;
-		display: none;
-	}
 }
 
 .home, .post {
@@ -191,10 +190,8 @@ ul.post-list {
 }
 
 .page-content {
-	// height: 100%;
-	// min-height: calc(100% - 72px);
+	min-height: calc(100vh - 184px);
 	min-width: 100%;
-	// width: 70%;
 	float: left;
 	margin: 0;
 	h2 {
@@ -288,3 +285,26 @@ pre {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: bold;
 }
+
+.hidden-small {
+	@media (max-width: 720px) {
+		display: none;
+	}
+}
+
+.hidden-large {
+	// font-size: 1.5em;
+	float: left;
+	margin-left: .5em;
+	@media (min-width: 720px) {
+		display: none;
+	}
+}
+
+.footer-mobile {
+	display: inline-block;
+	// float: right;
+	// margin: 0 auto;
+}
+
+
