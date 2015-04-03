@@ -14,16 +14,16 @@ permalink: /contact/
 mail at rodmachen.com
 
 **Twitter** <br>
-<a href="twitter.com/rod_machen" target="blank">@rod_machen</a>
+<a href="https://twitter.com/rod_machen" target="blank">@rod_machen</a>
 
 **GitHub** <br>
-<a href="github.com/rodmachen" target="blank">github.com/rodmachen</a>
+<a href="https://github.com/rodmachen" target="blank">github.com/rodmachen</a>
 
 **Freelance Writing** <br>
-<a href="rodmachen.com" target="blank">rodmachen.com</a>
+<a href="http://rodmachen.com" target="blank">rodmachen.com</a>
 
 **Photography** <br>
-<a href="rodmachen.photography" target="blank">rodmachen.photography</a>
+<a href="http://rodmachen.photography" target="blank">rodmachen.photography</a>
 
 
 
