@@ -3,19 +3,11 @@
 ---
 @charset "utf-8";
 
-// Our variables
-$base-font-family: Baskerville,"Baskerville Old Face","Hoefler Text",Garamond,"Times New Roman",serif;
-$base-font-size:   16px;
-$base-line-height: 1.25;
 
-// $spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #f6f6f6;
-$brand-color:      #400000;
 // $text-color:       $brand-color;
 
 @import
+				"base",
         "syntax-highlighting"
 ;
 html {
@@ -59,6 +51,7 @@ body {
 }
 
 .logo {
+	font-family: Baskerville,"Baskerville Old Face","Hoefler Text",Garamond,"Times New Roman",serif;
 	font-weight: normal;
 	font-size: 5em;
 	float: left;
@@ -307,4 +300,6 @@ pre {
 	// margin: 0 auto;
 }
 
-
+@import
+				"site"
+;
